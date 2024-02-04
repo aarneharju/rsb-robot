@@ -10,7 +10,6 @@ Insert the sales data for the week and export it as a PDF.
     Log in
     Download the Excel file
     Fill the form with the data from the Excel file
-
 Minimal task
     Log    Done.
 
@@ -47,3 +46,9 @@ Fill the form with the data from the Excel file
         Fill and submit the form for one person    ${sales_rep}
         
     END
+    
+Fill and submit the form
+    Input Text    firstname    John
+    Input Text    lastname    Does
+    Input Text    salesresult    123
+    Submit form
