@@ -10,6 +10,7 @@ Insert the sales data for the week and export it as a PDF.
     Log in
     Download the Excel file
     Fill the form with the data from the Excel file
+    Collect the results
 Minimal task
     Log    Done.
 
@@ -52,3 +53,7 @@ Fill and submit the form
     Input Text    lastname    Does
     Input Text    salesresult    123
     Submit form
+
+Collect the results
+    Screenshot    css: div.sales-summary    ${OUTPUT_DIR}${/}sales_summary.png
+    
