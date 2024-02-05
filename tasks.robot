@@ -35,6 +35,7 @@ Download the Excel file
 
 Fill and submit the form for one person
     [Arguments]    ${sales_rep}
+    Wait Until Page Contains Element    firstname
     Input Text    firstname    ${sales_rep}[First Name]
     Input Text    lastname    ${sales_rep}[Last Name]
     Input Text    salesresult    ${sales_rep}[Sales]
